@@ -25,10 +25,10 @@ Then you can call it like that:
 
 ## Shortened Urls
 
-This project now handles shortened url's using the JSONP service from http://longurl.org. e.g. http://bit.ly/oP77mm will first lengthen the URL
-to http://tinychat.com/omginternetparty and then embed as normal. This is experimental - so let me know of problems!
+This project used to handle shortened url's using the JSON service from http://longurl.org. e.g. http://bit.ly/oP77mm will first lengthen the URL
+to http://tinychat.com/omginternetparty. This API does not work anymore so you can implement your own. 
+https://www.npmjs.com/package/long-url this is a npm package to help you do this on a nodejs backend.
 
-to use...
 ```
 <a href="https://github.com/starfishmod/jquery-oembed-all" class="oembed">https://github.com/starfishmod/jquery-oembed-all</a>
 ```
