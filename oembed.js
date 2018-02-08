@@ -29,6 +29,7 @@ function Oembed(elements, options) {
 		maxWidth: null,
 		maxHeight: null,
 		includeHandle: true,
+		urlExpandApi: 'http://api.longurl.org/v2/expand',
 		embedMethod: 'auto',
 		// "auto", "append", "fill"
 		onProviderNotFound: function () {},
@@ -80,7 +81,7 @@ extend(Oembed.prototype, {
 				if (resourceURL.match(regExp) !== null) {
 					//AJAX to http://api.longurl.org/v2/expand?url=http://bit.ly/JATvIs&format=json&callback=hhh
 					var ajaxopts = extend({
-						url: "http://api.longurl.org/v2/expand",
+						url: self.settings.urlExpandApi,
 						dataType: 'jsonp',
 						data: {
 							url: resourceURL,
